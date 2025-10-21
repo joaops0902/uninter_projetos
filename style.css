@@ -1,0 +1,176 @@
+/* Estilos básicos para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #000000;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #751616;
+  color: #fff;
+  padding: 0.8rem 0;
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Estilos para os itens da lista de navegação */
+nav ul li {
+  margin: 0 1rem;
+}
+
+/* Estilos para os links no menu de navegação */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos para os links ao passar o mouse */
+nav ul li a:hover {
+  color: orange;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Seção 'Sobre Mim' */
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sobre img {
+  width: 180px;
+  height: 180px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobre h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sobre p {
+  max-width: 700px;
+  text-align: justify;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Estilos para formulários */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para os rótulos dos formulários */
+form label {
+  margin-top: 1rem;
+}
+
+/* Estilos para campos de entrada e áreas de texto */
+form input,
+form textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para o botão do formulário */
+form button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background-color: orange;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #3f1313;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: smaller;
+  margin-top: auto;
+}
+
+/* Estilos gerais para imagens */
+img {
+  width: 20%;
+  position: initial;
+  border-radius: 20%;
+}
+
+/* Estilos gerais para links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos para links ao passar o mouse */
+a:hover {
+  color: orange;
+}
+
+/* Estilos específicos para imagens de projetos */
+img-projeto {
+  width: 50%;
+  border-radius: 5%;
+  margin-top: 2%;
+  position: relative;
+  margin-left: 200px;
+}
+
+/* Responsividade */
+@media (min-width: 700px) {
+  .sobre {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .sobre img {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
